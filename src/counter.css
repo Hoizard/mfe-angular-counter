@@ -1,0 +1,41 @@
+:host { display: block; font-family: 'DM Sans', sans-serif; }
+.counter-widget { display: flex; flex-direction: column; gap: 10px; }
+.ctr-display {
+  background: #fafaf8; border: 1px solid #f0ede8; border-radius: 8px;
+  padding: 1.25rem; display: flex; flex-direction: column;
+  align-items: center; gap: 6px;
+}
+.ctr-num {
+  font-family: 'DM Mono', monospace; font-size: 48px; font-weight: 500;
+  color: #dd0031; line-height: 1; letter-spacing: -0.04em;
+  transition: transform 0.1s;
+}
+.ctr-num.bump { transform: scale(1.12); }
+.ctr-sublabel { font-size: 10px; color: #b0ada6; letter-spacing: 0.08em; text-transform: uppercase; font-family: 'DM Mono', monospace; }
+.step-row { display: flex; align-items: center; gap: 8px; font-size: 11px; color: #7a7870; font-family: 'DM Mono', monospace; margin-top: 4px; }
+.step-input {
+  width: 50px; border: 1px solid #e8e6e0; border-radius: 5px;
+  padding: 4px 6px; font-family: 'DM Mono', monospace; font-size: 12px;
+  text-align: center; outline: none; background: #fff;
+}
+.step-input:focus { border-color: #dd0031; }
+.ctr-controls { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.ctr-btn {
+  padding: 8px; border-radius: 6px; cursor: pointer;
+  border: 1px solid rgba(221,0,49,0.25); background: rgba(221,0,49,0.06);
+  color: #dd0031; font-family: 'DM Mono', monospace; font-size: 16px;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s, transform 0.1s;
+}
+.ctr-btn:hover { background: rgba(221,0,49,0.12); }
+.ctr-btn:active { transform: scale(0.95); }
+.ctr-btn.reset { font-size: 10px; letter-spacing: 0.06em; }
+.log-label { font-family: 'DM Mono', monospace; font-size: 10px; color: #b0ada6; text-transform: uppercase; letter-spacing: 0.1em; }
+.event-log {
+  background: #fafaf8; border: 1px solid #f0ede8; border-radius: 6px;
+  padding: 8px 10px; font-family: 'DM Mono', monospace; font-size: 10px;
+  color: #b0ada6; max-height: 90px; overflow-y: auto;
+  display: flex; flex-direction: column-reverse; gap: 1px;
+}
+.op { color: #dd0031; }
+.log-hint { color: #b0ada6; }
