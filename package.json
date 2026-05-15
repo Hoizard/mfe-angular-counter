@@ -2,9 +2,9 @@
   "name": "mfe-angular-counter",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 4172 --strictPort",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --port 4172 --strictPort"
   },
   "devDependencies": {
     "vite": "^5.0.0",
